@@ -3,18 +3,23 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
-"assets/FontManifest.json": "01700ba55b08a6141f33e168c4a6c22f",
-"assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
-"assets/NOTICES": "f569c059e36b6b229bd3d0ae15e26cc4",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
+  "index.html": "9251702e591db46393ebd239cb1687f7",
+"/": "9251702e591db46393ebd239cb1687f7",
+"main.dart.js": "0dcb7c76f6b1ede92385295bc29f95d7",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "a5100805511bc95e41e45eb2b5d05c81",
-"/": "a5100805511bc95e41e45eb2b5d05c81",
-"main.dart.js": "02f593e9673d88bc224434f610cf76de",
-"manifest.json": "77be5c7f05b52e50bd2d470ddd07051f"
+"manifest.json": "fd6494b37022485e5afc7fd40db2392b",
+"assets/AssetManifest.json": "6914586d7fe93e03b13fe3ddf99d9e55",
+"assets/NOTICES": "e5969f15f2671af0e25e7b8f1c2bd46e",
+"assets/FontManifest.json": "17ae07d6d4aaba1d1f926f33fb3b3922",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
+"assets/fonts/Questrial-Regular.ttf": "7775b2ab8bdaa25788912b375b09d9f4",
+"assets/fonts/Montserrat-Thin.ttf": "43dd5b7a3d277362d5e801e5353e3a01",
+"assets/fonts/Sacramento-Regular.ttf": "c3264a2601f855aef183e1892c5504db",
+"assets/fonts/MaterialIcons-Regular.ttf": "56d3ffdef7a25659eab6a68a3fbfaf16",
+"assets/fonts/MontserratAlternates-Regular.ttf": "778e16de3b7bbf4100f31ff4d6307216",
+"assets/assets/images/coding_animation.gif": "6f9087048a3b27d065486823fd6c2880"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -128,7 +133,7 @@ self.addEventListener("fetch", (event) => {
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
-  if (event.data == 'skipWaiting') {
+  if (event.message == 'skipWaiting') {
     return self.skipWaiting();
   }
 
