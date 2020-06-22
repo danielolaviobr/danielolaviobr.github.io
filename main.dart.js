@@ -40053,7 +40053,7 @@ E:function(a){var s=null,r=t.t
 return new Z.uN(0,T.es(H.b([new T.cw(s,30,s,s),new B.wv(s),new T.cw(s,30,s,s),new U.ww(s),new T.cw(s,30,s,s),T.es(H.b([new M.oK(L.Tc(C.u9),"Sobre","about",s),new M.oK(L.Tc(C.u8),"Projetos","projects",s)],r),C.hZ,C.b7,C.a0)],r),C.L,C.b7,C.a0),s)}}
 B.wv.prototype={
 E:function(a){var s=null,r=new P.aX(100,100)
-return M.bv(C.aP,M.w6(C.aS,new T.u4(new K.bk(r,r,r,r),U.vB("images/profile_image_circular.png",s),s),C.a4,s,10,s,new X.c0(C.o),s,C.bv),s,s,s,s,120,s,new V.aC(2,2,2,2),s,120)}}
+return M.bv(C.aP,M.w6(C.aS,new T.u4(new K.bk(r,r,r,r),U.vB("assets/images/profile_image_circular.png",s),s),C.a4,s,10,s,new X.c0(C.o),s,C.bv),s,s,s,s,120,s,new V.aC(2,2,2,2),s,120)}}
 M.oK.prototype={
 E:function(a){var s=null
 return R.vG(!1,!0,M.bv(s,T.pn(H.b([this.c,new T.cw(30,s,s,s),L.eO(this.d,C.qz,s)],t.t),C.L,C.b7,C.lA),s,s,s,s,s,s,new V.aC(10,10,10,10),s,s),s,!0,s,s,C.K,C.K,s,s,s,s,s,new M.JB(this,a),C.K)}}
