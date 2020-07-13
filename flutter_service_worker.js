@@ -5,13 +5,13 @@ const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
   "index.html": "9251702e591db46393ebd239cb1687f7",
 "/": "9251702e591db46393ebd239cb1687f7",
-"main.dart.js": "1248c47ffe271d0952a5ccfd907a7443",
+"main.dart.js": "da796721a609108fb4de650dfe819e74",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "manifest.json": "fd6494b37022485e5afc7fd40db2392b",
 "assets/AssetManifest.json": "3c3027629f5f004cc6b6eb714a7ba00f",
-"assets/NOTICES": "43017f9b1e29f4b2aa6032697109187b",
+"assets/NOTICES": "a5b5221ae56b71dbc29f1f4738f13d30",
 "assets/FontManifest.json": "520f87362a6d659671d83d9b78b26114",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "115e937bb829a890521f72d2e664b632",
 "assets/packages/flutter_icons/fonts/Octicons.ttf": "73b8cff012825060b308d2162f31dbb2",
@@ -133,7 +133,7 @@ self.addEventListener("fetch", (event) => {
   if (event.request.url == origin || event.request.url.startsWith(origin + '/#')) {
     key = '/';
   }
-  // If the URL is not the the RESOURCE list, skip the cache.
+  // If the URL is not the RESOURCE list, skip the cache.
   if (!RESOURCES[key]) {
     return event.respondWith(fetch(event.request));
   }
@@ -156,11 +156,11 @@ self.addEventListener("fetch", (event) => {
 self.addEventListener('message', (event) => {
   // SkipWaiting can be used to immediately activate a waiting service worker.
   // This will also require a page refresh triggered by the main worker.
-  if (event.data == 'skipWaiting') {
+  if (event.data === 'skipWaiting') {
     return self.skipWaiting();
   }
 
-  if (event.message = 'downloadOffline') {
+  if (event.message === 'downloadOffline') {
     downloadOffline();
   }
 });
