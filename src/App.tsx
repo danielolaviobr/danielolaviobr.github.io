@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { GitHub, Linkedin } from "react-feather";
 import TopBarProgress from "react-topbar-progress-indicator";
 import "./styles/home.css";
 
