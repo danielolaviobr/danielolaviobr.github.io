@@ -23,22 +23,22 @@ function App() {
           <span className="color-title">full-stack </span>
           <span className="title">developer</span>
         </div>
-        <div className="button-wrapper">
-          <a
-            href="https://github.com/danielolaviobr"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://br.linkedin.com/in/daniel-olavio"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Linkedin
-          </a>
-        </div>
+      </div>
+      <div className="button-wrapper">
+        <a
+          href="https://github.com/danielolaviobr"
+          target="_blank"
+          rel="noreferrer"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://br.linkedin.com/in/daniel-olavio"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Linkedin
+        </a>
       </div>
     </div>
   );

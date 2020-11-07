@@ -16,6 +16,8 @@
   position: absolute;
   top: 300px;
   left: 100px;
+
+  cursor: default;
 }
 
 .title {
@@ -39,12 +41,16 @@
 }
 
 .button-wrapper {
-  padding-top: 300px;
+  position: absolute;
+
+  bottom: 300px;
+  left: 120px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  width: 570px;
+  width: 620px;
   height: 64px;
 }
 
@@ -67,4 +73,81 @@
   line-height: 44px;
 
   color: #eaeaea;
+
+  transition: 0.2s;
+}
+
+.button-wrapper a:hover {
+  background: #61cf9c;
+}
+
+@media only screen and (max-width: 600px) {
+  .background {
+    width: 100vw;
+    height: 100vh;
+    background: #212121 url("../assets/Galaxy.svg") no-repeat;
+    background-position: 10% -90px;
+    position: relative;
+  }
+
+  .title-wrapper {
+    position: absolute;
+    top: 200px;
+    left: 50px;
+
+    cursor: default;
+  }
+
+  .title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 78px;
+
+    color: #eaeaea;
+  }
+
+  .color-title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 78px;
+
+    color: #ffb347;
+  }
+
+  .button-wrapper {
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 64px;
+  }
+
+  .button-wrapper a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 120px;
+    height: 48px;
+
+    background: #54b689;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 44px;
+
+    color: #eaeaea;
+
+    transition: 0.2s;
+  }
 }
